@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Meme Generator</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<header>
+		<section class="hero">
+			<!-- Title  -->
+			<h1 class="site-title" id="site-title__title">Ragglesoft Meme Generator</h1>
+			<h3 class="site-title" id="site-title__subtitle"> Making Memez the Memes of your Dreams</h3>
+		</section>
+	</header>
+	
+	<!-- Preview Image -->
+	<div class="user-ui">
+			<!-- TODO: remove image -->
+		<section class="hero__img-preview">
+			<!-- top text preview -->
+			<p class="img-text img-text__top">
+				top text preview
+			</p>
+
+			<!-- bottom text preview -->
+			<p class="img-text img-text__bottom">
+				bottom text preview
+			</p>
+			
+		</section>
+
+
+		<!-- User Input Forms -->
+		<form action="" class="user-inputs">
+			<table  class="user-inputs__elements">
+	
+				<tr>
+					<td>
+						<label for="user-input__elements-form__url">Image URL</label>
+					</td>
+					<td>
+						<input type="url" class="user-input__elements-form" id="user-input__elements-form__url" placeholder="What's The URL for the meme image?">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="user-input__elements-form__top-text" id="user-input__elements-form__top-text">Top Image Text</label>
+					</td>
+					<td>
+						<input type="text" id="user-input__element-form__top-text" class="user-input__elements-form" placeholder="(optional)  What text do you want on the top?">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="user-input__elements-form__bottom-text"> Bottom Image Text</label>
+					</td>
+					<td>
+						<input type="text" id="user-input__elements-form__bottom-text" class="user-input__elements-form" placeholder="(optional) What text do you want at the bottom?">
+					</td>
+				</tr>
+				<!-- Buttons -->
+				<tr>
+					<td></td>
+					<td>
+						<button class="user-input__elements-form__buttons" id="submit">
+							Submit
+						</button>
+
+						<button class="user-input__elements-form__buttons" id="clear">
+							Clear
+						</button>
+					</td>
+				</tr>
+			</table>	
+		</form>
+	</div>
+	<!-- Main Body Where Images Will be Shown -->
+	<div class="main-body">
+		
+			<div class="image-meme">
+					<!-- top text preview -->
+					<p class="img-text img-text__top">
+						top text preview
+					</p>
+					<div class="image-meme__x"></div>
+					<!-- bottom text preview -->
+					<p class="img-text img-text__bottom">
+						bottom text preview
+					</p>
+			</div>
+
+		<div class="image-meme">
+			<!-- top text preview -->
+			<p class="img-text img-text__top">
+				top text preview
+			</p>
+
+			<!-- bottom text preview -->
+			<p class="img-text img-text__bottom">
+				bottom text preview
+			</p>
+		</div>
+		
+		<div class="image-meme"></div>
+		<div class="image-meme"></div>
+		<div class="image-meme"></div>
+		<div class="image-meme"></div>
+	</div>
+</body>
+</html>
