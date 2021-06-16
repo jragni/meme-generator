@@ -56,7 +56,7 @@ button{
 	height:420px;
 	width:420px;
 	background-repeat: no-repeat;
-	background-size:contain;
+	background-size:420px 420px;
 	position:relative;
 	overflow: auto;
 }
@@ -73,17 +73,17 @@ button{
 }
 
 .top-text{
-	top:5%;
+	top:0%;
 	right:50%;
 	text-align:center;
-	transform:translate(50%,-30%)
+	transform:translate(30%,0%)
 }
 
 .bottom-text{
-	bottom:5%;
+	bottom:10%;
 	right:50%;
 	text-align:center;
-	transform:translate(50%,-20%)
+	transform:translate(30%,-20%)
 }
 
 .grid-container__form{
@@ -97,7 +97,13 @@ button{
 	width:60%;	
 	overflow: auto;
 }
-
+.grid{
+	display:grid;
+	grid-template-columns: repeat(4,420px);
+	column-gap: 20px;
+	margin:25px;
+	row-gap: 20px;
+}
 
 .flexbox-container{
 	display:flex;
