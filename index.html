@@ -3,110 +3,59 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Meme Generator</title>
+	<title>Ragglesoft Meme-Generator</title>
 	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	<header>
-		<section class="hero">
-			<!-- Title  -->
-			<h1 class="site-title" id="site-title__title">Ragglesoft Meme Generator</h1>
-			<h3 class="site-title" id="site-title__subtitle"> Making Memez the Memes of your Dreams</h3>
-		</section>
-	</header>
-	
-	<!-- Preview Image -->
-	<div class="user-ui">
-			<!-- TODO: remove image -->
-		<section class="hero__img-preview">
-			<!-- top text preview -->
-			<p class="img-text img-text__top">
-				top text preview
-			</p>
+		<!--Title-->
+		<h1 class="center" id="main-title">
+			Ragglesoft Meme Generator
+		</h1>
 
-			<!-- bottom text preview -->
-			<p class="img-text img-text__bottom">
-				bottom text preview
-			</p>
+		<h3 class="center" id="title-follow">
+			Memes of your dreams
+		</h3>
+		<!-- User Inputs and Preview -->
+		<section class="flexbox-container" id="user-ui">
 			
+			<!-- Preview Image-->
+			<section id="preview-image" class="image flexbox-item">
+				<h3 class="top-text"></h3>
+				<h3 class="bottom-text">
+				</h3>
+			</section>
+
+			<!-- User Inputs -->
+			<form action="submit" class="flexbox-item grid-container__form">
+				
+				<!-- URL -->
+				<label for="url-input"><h4>URL </h4></label>
+				<input type="text" id="url-input" placeholder="(required) Enter the URL of image to Meme.">
+				<span></span>
+
+				<!-- Top Text -->
+				<label for="top-text-input"><h4>Text At Top</h4></label>
+				<input type="text" id="top-text-input" placeholder="(optional) What do you want for the top text?">
+				<span></span>
+		
+				<!-- Bottom Text -->
+				<label for="bottom-text-input"><h4>Text at Bottom</h4></label>
+				<input id="bottom-text-input" placeholder="(optional) What do you want for the bottom text?">
+				<span></span>
+				<span></span>
+					<button id="submit-button" type="submit">Submit</button>
+					<button id="clear-button" >Clear</button>
+
+				</section>
+			</form>
 		</section>
-
-
-		<!-- User Input Forms -->
-		<form action="" class="user-inputs">
-			<table  class="user-inputs__elements">
-	
-				<tr>
-					<td>
-						<label for="user-input__elements-form__url">Image URL</label>
-					</td>
-					<td>
-						<input type="url" class="user-input__elements-form" id="user-input__elements-form__url" placeholder="What's The URL for the meme image?">
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<label for="user-input__elements-form__top-text" id="user-input__elements-form__top-text">Top Image Text</label>
-					</td>
-					<td>
-						<input type="text" id="user-input__element-form__top-text" class="user-input__elements-form" placeholder="(optional)  What text do you want on the top?">
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<label for="user-input__elements-form__bottom-text"> Bottom Image Text</label>
-					</td>
-					<td>
-						<input type="text" id="user-input__elements-form__bottom-text" class="user-input__elements-form" placeholder="(optional) What text do you want at the bottom?">
-					</td>
-				</tr>
-				<!-- Buttons -->
-				<tr>
-					<td></td>
-					<td>
-						<button class="user-input__elements-form__buttons" id="submit">
-							Submit
-						</button>
-
-						<button class="user-input__elements-form__buttons" id="clear">
-							Clear
-						</button>
-					</td>
-				</tr>
-			</table>	
-		</form>
-	</div>
-	<!-- Main Body Where Images Will be Shown -->
-	<div class="main-body">
 		
-			<div class="image-meme">
-					<!-- top text preview -->
-					<p class="img-text img-text__top">
-						top text preview
-					</p>
-					<div class="image-meme__x"></div>
-					<!-- bottom text preview -->
-					<p class="img-text img-text__bottom">
-						bottom text preview
-					</p>
-			</div>
+	</header>
+		<!-- main-body  -->
+	<section class="main-body grid">
 
-		<div class="image-meme">
-			<!-- top text preview -->
-			<p class="img-text img-text__top">
-				top text preview
-			</p>
-
-			<!-- bottom text preview -->
-			<p class="img-text img-text__bottom">
-				bottom text preview
-			</p>
-		</div>
-		
-		<div class="image-meme"></div>
-		<div class="image-meme"></div>
-		<div class="image-meme"></div>
-		<div class="image-meme"></div>
-	</div>
+	</section>
 </body>
+<script src="script.js"></script>
 </html>
