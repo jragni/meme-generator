@@ -46,7 +46,7 @@ button{
 /* ID and Classes */
 
 #preview-image{
-	background-image: url(/images/blankphoto.png);
+	background-image: url(images/blankphoto.png);
 }
 
 #main-title, #title-follow{
@@ -142,7 +142,7 @@ button{
 	
 }
 .background-overlay:hover{
-	background-image: url('/images/multiplication-button-or-x-icon-vector-10273548.jpg');
+	background-image: url(images/multiplication-button-or-x-icon-vector-10273548.jpg);
 	background-size:cover;
 	
 	opacity:60%;
