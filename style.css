@@ -42,6 +42,7 @@ button{
 	padding:25px;
 	width: 100%;
 }
+
 /* ID and Classes */
 
 #preview-image{
@@ -147,6 +148,28 @@ button{
 	opacity:60%;
 }
 
-#meme-gallery{
-	background: 
+#submit-button{
+	background: rgb(39, 39, 151);
+	letter-spacing: 3px;
+	font-weight: bold;
+	color:white;
+}
+
+#clear-button{
+	background-color: red;
+	letter-spacing: 3px;
+	font-weight: bold;
+	color: white;
+}
+
+#submit-button:hover{
+	border-color: white;
+	border:3px solid;
+	background-color: rgb(98, 98, 221);
+}
+
+#clear-button:hover{
+	border-color: white;
+	border:3px solid;
+	background-color: rgb(98, 98, 221);
 }
