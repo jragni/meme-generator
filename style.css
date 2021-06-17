@@ -30,9 +30,16 @@ input{
 label{
 	text-align:right;
 	margin-right:10px;
+	background: #565656;
+}
+.label{
+	color:white;
+	background-color: inherit;
 }
 button{
 	height:4rem;
+	border-radius: 60px;
+	padding:25px;
 	width: 100%;
 }
 /* ID and Classes */
@@ -43,27 +50,32 @@ button{
 
 #main-title, #title-follow{
 	padding:10px;
-	margin:5px;
+	margin:auto;
+	color:white;
+	background: #6d6b69
 }
 
 
 #user-ui{
 	/* Temporary  */
-	background-color: slategray;
+	background-color: #d6cdc6;
 }
 
 .image{
 	height:420px;
 	width:420px;
+	text-align: center;
 	background-repeat: no-repeat;
 	background-size:420px 420px;
 	position:relative;
+	border:black solid 2px;
 	overflow: auto;
 }
 
 .top-text, .bottom-text{
 	position:absolute;
 	color: white;
+	width:100%;
 	text-shadow:
 		-1px -1px 0 #000,
 		1px -1px 0 #000,
@@ -76,21 +88,22 @@ button{
 	top:0%;
 	right:50%;
 	text-align:center;
-	transform:translate(30%,0%)
+	transform:translate(50%,0%)
 }
 
 .bottom-text{
 	bottom:10%;
 	right:50%;
 	text-align:center;
-	transform:translate(30%,-20%)
+	transform:translate(50%,50%)
 }
 
 .grid-container__form{
 	display: grid;
 	grid-template-columns: repeat(3,240px);
 	/* temp */
-	background-color: turquoise;
+	border-radius: 25px;
+	background-color: #565656;
 	border:1px white solid;
 	align-items: center;
 	padding:26px;
@@ -112,7 +125,6 @@ button{
 }
 
 .flexbox-item{
-	padding:25px;
 	margin:auto;
 }
 
@@ -133,4 +145,8 @@ button{
 	background-size:cover;
 	
 	opacity:60%;
+}
+
+#meme-gallery{
+	background: 
 }

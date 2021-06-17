@@ -42,7 +42,7 @@ function addPhoto(event){
 	let url = document.getElementById("url-input").value
 	//prompt user
 	// Get value from URL
-	if( url!=false ){
+	if( url!=false || url.length !== 0 ){
 
 		// create nodes
 		let memeNode = document.createElement("section");
@@ -116,7 +116,7 @@ function livePreviewUpdate(){
 	// if text is longer than 23 go smaller
 	topText.length > 23 ? previewImageChildren[0].style.fontSize = "2rem": previewImageChildren[0].style.fontSize = "2.5rem";
 
-	bottomText.length > 23 ? previewImageChildren[1].style.fontSize = "4rem": previewImageChildren[1].style.fontSize = "2.5rem";
+	bottomText.length > 23 ? previewImageChildren[1].style.fontSize = "2rem": previewImageChildren[1].style.fontSize = "2.5rem";
 
 	previewImageChildren[0].innerHTML = topText;
 	previewImageChildren[1].innerHTML = bottomText;
