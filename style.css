@@ -116,8 +116,21 @@ button{
 	margin:auto;
 }
 
-
 .center{
 	text-align: center;
 }
 
+.meme-image:hover{
+	opacity: 60%;
+}
+.background-overlay,.background-overlay:hover{
+	height:420px;
+	width:420px;
+	
+}
+.background-overlay:hover{
+	background-image: url('/images/multiplication-button-or-x-icon-vector-10273548.jpg');
+	background-size:cover;
+	
+	opacity:60%;
+}

@@ -5,9 +5,9 @@
 */
 
 //initialize global variables
-
 let memeGallery = document.getElementById("meme-gallery");  // array of HTML obj for meme gallery
-
+let memeGenId = [];
+let memeCount = 0;
 // Live Update on Top Text and Bottom Text and Image for preview
 setInterval(livePreviewUpdate,100);
 
@@ -30,21 +30,36 @@ let submitButton = document.getElementById('submit-button').addEventListener('cl
 */
 let clearButton = document.getElementById("clear-button").addEventListener('click', clearUserUIArea);
 
+// Removing Meme
+
+// check if currrent element 
+memeGenId.findIndex()
 
 // Functions
 
 function addPhoto(event){
 	event.preventDefault();
+	let url = document.getElementById("url-input").value
 	//prompt user
-	let userPrompt = confirm("Are you sure you want to add this meme to the collection?")
 	// Get value from URL
-	if(userPrompt===true){
+	if( url!=false ){
 
 		// create nodes
 		let memeNode = document.createElement("section");
+		let backgroundOverlay = document.createElement("section");
+		backgroundOverlay.style.position = "absolute";
+		backgroundOverlay.classList.add("background-overlay");
+		backgroundOverlay.id = memeCount;
+		memeCount++;
+		memeGenId.push(backgroundOverlay.id);
+		backgroundOverlay.addEventListener("click",removeParentNode)
 		memeNode.classList.add("image")
+		memeNode.classList.add("meme-image")
+		memeNode.style.position = "relative";
 		let topTextNode = document.createElement("h3");
+		topTextNode.classList.add("top-text");
 		let bottomTextNode = document.createElement("h3");
+		bottomTextNode.classList.add("bottom-text");
 
 		// add HTML to nodes
 		memeNode.style.backgroundImage = document.getElementById("preview-image").style.backgroundImage;
@@ -52,15 +67,22 @@ function addPhoto(event){
 		topTextNode.innerHTML = document.getElementById("preview-top").innerHTML;
 		
 		bottomTextNode.innerHTML = document.getElementById("preview-bot").innerHTML;
+		
 
 		// MEME NODE ADD CHILD
 		memeNode.appendChild(topTextNode);
 		memeNode.appendChild(bottomTextNode);
+		memeNode.appendChild(backgroundOverlay);
+
 
 		// push to memeGallery
 		memeGallery.appendChild(memeNode);
 
 	}
+}
+
+function removeParentNode(e){
+	e.target.parentNode.remove();
 }
 
 
